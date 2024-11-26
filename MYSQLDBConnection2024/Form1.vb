@@ -5,7 +5,7 @@ Public Class Form1
     Dim command As MySqlCommand
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         conn = New MySqlConnection
-        conn.ConnectionString = "server=127.0.1;userid=root;password='';database=test"
+        conn.ConnectionString = "server=127.0.0.1; port= 3306; userid=root;password='';database=test"
 
         Try
             conn.Open()
@@ -19,13 +19,13 @@ Public Class Form1
 
     Private Sub Login_Click(sender As Object, e As EventArgs) Handles Login.Click
         conn = New MySqlConnection
-        conn.ConnectionString = "server=127.0.1;userid=root;password='';database=test"
+        conn.ConnectionString = "server=127.0.0.1; port= 3306; userid=root;password='';database=test"
         Dim reader As MySqlDataReader
 
         Try
             conn.Open()
             Dim query As String
-            query = "SELECT * FROM test.edata WHERE username = '" & input_username.Text & "' and password = '" & input_password.Text & "'"
+            query = "SELECT * FROM test.data WHERE username = '" & input_username.Text & "' and password = '" & input_password.Text & "'"
             command = New MySqlCommand(query, conn)
             reader = command.ExecuteReader
             Dim count As Integer
@@ -37,6 +37,8 @@ Public Class Form1
 
             If count = 1 Then
                 MessageBox.Show("Username and Password are correct")
+                SignUp_Form.Show()
+                Me.Hide()
 
             ElseIf count > 1 Then
                 MessageBox.Show("Username and Password are duplicate")
