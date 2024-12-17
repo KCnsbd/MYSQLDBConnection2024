@@ -23,109 +23,80 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Button1 = New Button()
-        Username = New Label()
-        input_username = New TextBox()
         input_password = New TextBox()
         Login = New Button()
-        Label1 = New Label()
+        input_username = New TextBox()
         SuspendLayout()
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Black
+        Button1.BackColor = Color.FromArgb(CByte(254), CByte(220), CByte(219))
         Button1.FlatAppearance.BorderColor = Color.White
         Button1.FlatAppearance.MouseDownBackColor = Color.DeepPink
-        Button1.Font = New Font("Leelawadee", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(52, 43)
-        Button1.Margin = New Padding(2, 4, 2, 4)
+        Button1.Font = New Font("Franklin Gothic Demi Cond", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.FromArgb(CByte(254), CByte(102), CByte(148))
+        Button1.Location = New Point(23, 26)
+        Button1.Margin = New Padding(1, 3, 1, 3)
         Button1.Name = "Button1"
-        Button1.Size = New Size(250, 43)
+        Button1.Size = New Size(216, 37)
         Button1.TabIndex = 0
         Button1.Text = "Check Connection"
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' Username
-        ' 
-        Username.AutoSize = True
-        Username.BackColor = Color.Transparent
-        Username.Font = New Font("Leelawadee", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Username.ForeColor = Color.LavenderBlush
-        Username.Location = New Point(298, 140)
-        Username.Margin = New Padding(2, 0, 2, 0)
-        Username.Name = "Username"
-        Username.Size = New Size(120, 29)
-        Username.TabIndex = 1
-        Username.Text = "Username"
-        ' 
-        ' input_username
-        ' 
-        input_username.BackColor = Color.DeepPink
-        input_username.Font = New Font("Leelawadee", 12F)
-        input_username.ForeColor = Color.LavenderBlush
-        input_username.Location = New Point(96, 173)
-        input_username.Margin = New Padding(3, 4, 3, 4)
-        input_username.Name = "input_username"
-        input_username.Size = New Size(538, 36)
-        input_username.TabIndex = 3
-        input_username.TextAlign = HorizontalAlignment.Center
-        ' 
         ' input_password
         ' 
-        input_password.BackColor = Color.DeepPink
-        input_password.Font = New Font("Leelawadee", 12F)
-        input_password.ForeColor = Color.LavenderBlush
-        input_password.Location = New Point(96, 269)
-        input_password.Margin = New Padding(3, 4, 3, 4)
+        input_password.BackColor = Color.FromArgb(CByte(254), CByte(220), CByte(219))
+        input_password.Font = New Font("Franklin Gothic Book", 10F)
+        input_password.ForeColor = Color.DarkMagenta
+        input_password.Location = New Point(62, 232)
+        input_password.Margin = New Padding(2, 3, 2, 3)
         input_password.Name = "input_password"
         input_password.PasswordChar = "*"c
-        input_password.Size = New Size(538, 36)
+        input_password.PlaceholderText = "Password"
+        input_password.Size = New Size(347, 30)
         input_password.TabIndex = 4
         input_password.TextAlign = HorizontalAlignment.Center
         ' 
         ' Login
         ' 
-        Login.BackColor = Color.Black
+        Login.BackColor = Color.FromArgb(CByte(254), CByte(220), CByte(219))
         Login.FlatAppearance.MouseDownBackColor = Color.LavenderBlush
         Login.FlatAppearance.MouseOverBackColor = Color.DeepPink
-        Login.Location = New Point(96, 348)
-        Login.Margin = New Padding(3, 4, 3, 4)
+        Login.Font = New Font("Franklin Gothic Demi Cond", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Login.Location = New Point(62, 300)
+        Login.Margin = New Padding(2, 3, 2, 3)
         Login.Name = "Login"
-        Login.Size = New Size(538, 43)
+        Login.Size = New Size(346, 37)
         Login.TabIndex = 5
-        Login.Text = "Login"
+        Login.Text = "LOGIN"
         Login.UseVisualStyleBackColor = False
         ' 
-        ' Label1
+        ' input_username
         ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Leelawadee", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.LavenderBlush
-        Label1.Location = New Point(303, 236)
-        Label1.Margin = New Padding(2, 0, 2, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(111, 29)
-        Label1.TabIndex = 7
-        Label1.Text = "Password"
+        input_username.BackColor = Color.FromArgb(CByte(254), CByte(220), CByte(219))
+        input_username.Font = New Font("Franklin Gothic Book", 10F)
+        input_username.ForeColor = Color.DarkMagenta
+        input_username.Location = New Point(62, 149)
+        input_username.Margin = New Padding(2, 3, 2, 3)
+        input_username.Name = "input_username"
+        input_username.PlaceholderText = "Username"
+        input_username.Size = New Size(347, 30)
+        input_username.TabIndex = 3
+        input_username.TextAlign = HorizontalAlignment.Center
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(14F, 29F)
+        AutoScaleDimensions = New SizeF(9F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Black
-        BackgroundImage = My.Resources.Resources._96a9b5557cc0d96dbfc21808ce9fea5a
+        BackColor = Color.FromArgb(CByte(254), CByte(177), CByte(183))
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(745, 522)
-        Controls.Add(Label1)
+        ClientSize = New Size(479, 450)
         Controls.Add(Login)
         Controls.Add(input_password)
         Controls.Add(input_username)
-        Controls.Add(Username)
         Controls.Add(Button1)
-        Font = New Font("Leelawadee", 11.999999F, FontStyle.Bold)
-        ForeColor = Color.LavenderBlush
-        Margin = New Padding(4)
+        Font = New Font("Franklin Gothic Medium Cond", 10F)
+        ForeColor = Color.FromArgb(CByte(254), CByte(102), CByte(148))
         Name = "Form1"
         Text = "MYSQL DATABASE CONNECTION"
         ResumeLayout(False)
@@ -133,10 +104,8 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents Username As Label
-    Friend WithEvents input_username As TextBox
     Friend WithEvents input_password As TextBox
     Friend WithEvents Login As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents input_username As TextBox
 
 End Class
